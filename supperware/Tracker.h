@@ -231,7 +231,7 @@ public:
         buffer[5] = 0x03; // -- Magnetometer
         buffer[6] = 0x04; // -- Gesture and chirality
         buffer[7] = 0x06; // -- Central pull speed
-        buffer[7] = 0x11; // -- Travel mode
+        buffer[8] = 0x11; // -- Travel mode
         return MessageLength;
     }
 

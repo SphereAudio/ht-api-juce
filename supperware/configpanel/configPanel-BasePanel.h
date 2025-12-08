@@ -97,7 +97,7 @@ namespace ConfigPanel
                 g.setColour(juce::Colour(0xff0c0c0c));
                 g.fillRect(0, 2, LabelWidth, 21);
                 g.setColour(TitleLabel);
-                g.setFont(juce::Font(16.0, juce::Font::plain));
+                g.setFont(juce::Font(juce::FontOptions(16.0, juce::Font::plain)));
                 g.drawText(title, 8, 4, 200, 200, juce::Justification::topLeft);
             }
         }
@@ -140,7 +140,7 @@ protected:
             juce::Label* lb = labels.add(new juce::Label(text, text));
             lb->setTopLeftPosition(topLeft);
             lb->setSize(LabelWidth, LineHeight[styleIndex]);
-            lb->setFont(juce::Font(LabelFontSize[styleIndex], LabelFontStyle[styleIndex]));
+            lb->setFont(juce::Font(juce::FontOptions(LabelFontSize[styleIndex], LabelFontStyle[styleIndex])));
             lb->setColour(juce::Label::ColourIds::textColourId, LabelColour[styleIndex]);
             topLeft.y += LineHeight[styleIndex] + 3;
             addAndMakeVisible(lb);

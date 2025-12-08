@@ -81,7 +81,7 @@ namespace HeadPanel
 
             if (connectionState == Midi::State::Bootloader)
             {
-                g.setFont(juce::Font (15.0f));
+                g.setFont(juce::FontOptions(15.0f));
                 g.setColour(juce::Colour(0xff808080));
                 g.drawText("BOOTLOADER", bounds, juce::Justification::centred);
             }
