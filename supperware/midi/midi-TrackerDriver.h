@@ -6,6 +6,7 @@
  */
 
 #pragma once
+#include <supperware/Tracker.h>
 
 namespace Midi
 {
@@ -222,7 +223,6 @@ namespace Midi
     private:
         std::vector<Listener*> listeners;
         Tracker tracker;
-        juce::Vector3D<float> position;
         uint8_t midiBuffer[16];
         Tracker::AngleMode currentAngleMode;
         bool is100Hz;
