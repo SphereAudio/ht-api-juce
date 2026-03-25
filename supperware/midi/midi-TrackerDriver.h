@@ -6,7 +6,7 @@
  */
 
 #pragma once
-#include <supperware/Tracker.h>
+#include "../Tracker.h"
 
 namespace Midi
 {
